@@ -1,0 +1,39 @@
+{
+	"env": {
+		"browser": true,
+		"node": true,
+		"es2021": true
+	},
+	"extends": [
+		"eslint:recommended", // ESLint 기본 추천 규칙
+		"plugin:react/recommended", // React 규칙
+		"plugin:react-hooks/recommended", // React Hooks 규칙
+		"plugin:prettier/recommended"
+	],
+	"parserOptions": {
+		"ecmaVersion": 12, // 최신 ECMAScript 문법 지원
+		"sourceType": "module" // ES Module 사용
+	},
+	"plugins": ["prettier"], // Prettier 플러그인
+	"rules": {
+		"react/react-in-jsx-scope": "off", // React 17 이상에서 필요 없음
+		"react/prop-types": "off", // PropTypes 사용 여부
+		"prettier/prettier": "warn", // Prettier 규칙을 경고로 표시
+		"no-unused-vars": "off", // 사용하지 않는 변수 무시
+		"no-console": "off", // console 사용 허용
+		"eqeqeq": "warn", // == 대신 === 사용 권장 (에러 아님)
+		"curly": ["warn", "multi-line"], // 여러 줄일 때만 중괄호 강제
+		"arrow-body-style": "off" // 화살표 함수 스타일 규칙 비활성화
+	},
+	"overrides": [
+		{
+			"files": ["*.test.js", "*.spec.js"],
+			"env": {
+				"jest": true // Jest 환경 활성화
+			},
+			"rules": {
+				"no-unused-expressions": "off" // 테스트 파일에서 불필요한 에러 제거
+			}
+		}
+	]
+}
