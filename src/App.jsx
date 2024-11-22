@@ -5,9 +5,6 @@ function App() {
   return (
     <>
       <Global styles={GlobalStyle} />
-      <div>
-        
-      </div>
     </>
   );
 }

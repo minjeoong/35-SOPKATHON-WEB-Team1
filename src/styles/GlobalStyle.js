@@ -129,14 +129,21 @@ const GlobalStyle = css`
     max-width: 37.5rem;
     min-height: 100dvh;
     margin: 0 auto;
-    background-color: #fff;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
   }
 
   ::-webkit-scrollbar {
     display: none;
   }
-  
+  input,
+  button {
+    border: none;
+    outline: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
 `;
 
 export default GlobalStyle;
