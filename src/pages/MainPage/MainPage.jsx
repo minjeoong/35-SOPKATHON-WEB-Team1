@@ -1,5 +1,6 @@
 import Dropdown from '@/components/common/Dropdown/Dropdown';
 import { DATE } from '@/constants/date';
+import { wrapper } from '@/pages/MainPage/MainPage.style';
 import { useState } from 'react';
 
 const MainPage = () => {
@@ -15,7 +16,7 @@ const MainPage = () => {
 	};
 
 	return (
-		<div>
+		<div css={wrapper}>
 			<Dropdown
 				onTrigger={handleTrigger}
 				isOpen={isOpen}

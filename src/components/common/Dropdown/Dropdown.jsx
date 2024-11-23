@@ -13,11 +13,6 @@ const Dropdown = ({
 }) => {
 	return (
 		<div css={S.wrapper}>
-			{label && (
-				<label id='label' css={S.label}>
-					{label}
-				</label>
-			)}
 			{selectedValue || placeholder}
 			<button onClick={onTrigger}>
 				{isOpen ? (

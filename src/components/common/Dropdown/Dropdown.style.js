@@ -2,8 +2,9 @@ import { theme } from '@/styles/theme';
 import { css } from '@emotion/react';
 
 export const wrapper = css`
-	position: relative;
 	display: flex;
+
+	width: 100%;
 
 	justify-content: space-between;
 	align-items: center;
@@ -19,13 +20,6 @@ export const wrapper = css`
 	background-color: ${theme.colors.gray10};
 
 	${theme.fonts.body2}
-`;
-
-export const label = css`
-	/* position: absolute; */
-
-	/* top: 4rem; */
-	${theme.fonts.title3}
 `;
 
 export const itemList = css`
