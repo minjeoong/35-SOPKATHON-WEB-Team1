@@ -1,3 +1,7 @@
+export { default as IcExpressionlessFace } from './IcExpressionlessFace';
+export { default as IcGrinningFace } from './IcGrinningFace';
+export { default as IcSadFace } from './IcSadFace';
+export { default as IcSmilingFace } from './IcSmilingFace';
 export { default as IcHomeChar1 } from './IcHomeChar1';
 export { default as IcHomeChar2 } from './IcHomeChar2';
 export { default as IcHomeChar3 } from './IcHomeChar3';
