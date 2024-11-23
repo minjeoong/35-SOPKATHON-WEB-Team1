@@ -11,35 +11,35 @@ const colors = {
 };
 
 const fonts = {
-	head_eb_22: css`
+	head1: css`
 		font-family: 'Apple SD Gothic Neo';
 		font-size: 22px;
 		font-style: normal;
 		font-weight: 800;
 		line-height: 24px; /* 109.091% */
 	`,
-	head2_eb_20: css`
+	head2: css`
 		font-family: 'Apple SD Gothic Neo';
 		font-size: 20px;
 		font-style: normal;
 		font-weight: 800;
 		line-height: 24px; /* 120% */
 	`,
-	title_eb_24: css`
+	title1: css`
 		font-family: 'Apple SD Gothic Neo';
 		font-size: 24px;
 		font-style: normal;
 		font-weight: 800;
 		line-height: 26px; /* 108.333% */
 	`,
-	body1_m_16: css`
+	body1: css`
 		font-family: 'Apple SD Gothic Neo';
 		font-size: 16px;
 		font-style: normal;
 		font-weight: 500;
 		line-height: 20px; /* 125% */
 	`,
-	caption1_m_12: css`
+	caption1: css`
 		font-family: 'Apple SD Gothic Neo';
 		font-size: 12px;
 		font-style: normal;
