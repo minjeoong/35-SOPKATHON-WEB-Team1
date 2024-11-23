@@ -27,16 +27,19 @@ const MainPage = () => {
 				<IcHomeChar5 css={S.Char5} />
 			</section>
 			<div css={S.ButtonWrap}>
-				<Button
-					variant='primary'
-					size='large'
-					onClick={() => navigate('/info')}
-				>
-					시작하기
-				</Button>
+				{/*<Button*/}
+				{/*	variant='primary'*/}
+				{/*	size='large'*/}
+				{/*	onClick={() => navigate('/info')}*/}
+				{/*>*/}
+				{/*	시작하기*/}
+				{/*</Button>*/}
 				{/*<Button variant='feedback' size='small'>*/}
 				{/*	평가 제출하기*/}
 				{/*</Button>*/}
+				<Button variant='thankyou' size='small'>
+					평가 제출하기
+				</Button>
 			</div>
 		</main>
 	);
