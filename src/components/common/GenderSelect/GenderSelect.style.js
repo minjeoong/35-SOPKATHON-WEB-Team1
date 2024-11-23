@@ -1,4 +1,3 @@
-// Gender.style.js
 import { css } from '@emotion/react';
 import { theme } from '@/styles/theme';
 

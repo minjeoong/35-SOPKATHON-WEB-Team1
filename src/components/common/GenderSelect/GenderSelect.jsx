@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import * as S from './GenderSelect.style'; // 스타일을 import
+import * as S from './GenderSelect.style';
 
 const GenderSelect = () => {
   const [selected, setSelected] = useState('male');
