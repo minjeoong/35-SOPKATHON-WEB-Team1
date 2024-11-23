@@ -20,7 +20,11 @@ const Dropdown = ({
 			)}
 			{selectedValue || placeholder}
 			<button onClick={onTrigger}>
-				{isOpen ? <IcArrowDown /> : <IcArrowUp />}
+				{isOpen ? (
+					<IcArrowUp width={16} height={16} />
+				) : (
+					<IcArrowDown width={16} height={16} />
+				)}
 			</button>
 			{isOpen && (
 				<ul css={S.itemList}>
