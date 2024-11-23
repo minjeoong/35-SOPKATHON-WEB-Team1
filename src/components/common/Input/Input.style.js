@@ -1,12 +1,6 @@
 import { theme } from '@/styles/theme';
 import { css } from '@emotion/react';
 
-export const label = css`
-	width: 100%;
-	color: ${theme.colors.gray40};
-	${theme.fonts.title3}
-`;
-
 const sharedInputStyles = css`
 	display: flex;
 	align-items: center;

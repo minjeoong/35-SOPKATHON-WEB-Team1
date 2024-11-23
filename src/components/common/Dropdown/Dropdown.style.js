@@ -1,12 +1,6 @@
 import { theme } from '@/styles/theme';
 import { css } from '@emotion/react';
 
-export const label = css`
-	color: ${theme.colors.gray40};
-
-	${theme.fonts.title3};
-`;
-
 export const wrapper = (isDisabled) => css`
 	display: flex;
 	position: relative;
@@ -25,6 +19,10 @@ export const wrapper = (isDisabled) => css`
 		: `${theme.colors.gray10}`};
 
 	${theme.fonts.body2}
+
+	button {
+		background: transparent;
+	}
 `;
 
 export const itemList = css`
@@ -55,8 +53,4 @@ export const item = css`
 	border-bottom: 1px solid ${theme.colors.gray20};
 
 	${theme.fonts.body2}
-`;
-
-export const svg = css`
-	background: ${theme.colors.gray20};
 `;
