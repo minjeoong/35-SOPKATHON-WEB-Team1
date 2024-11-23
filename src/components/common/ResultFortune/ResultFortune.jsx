@@ -5,9 +5,7 @@ const ResultFortune = ({ data }) => {
     <div css={S.containerStyle}>
       {data.map((item) => (
         <div css={S.itemStyle} key={item.id}> 
-          <div css={S.iconStyle}>
-            <item.icon style={{ width: item.iconSize }} />
-          </div>
+          <item.icon style={{ width: item.iconSize }} />
           <h2 css={S.titleStyle}>{item.title}</h2>
           <p css={S.contentStyle}>{item.content}</p>
         </div>

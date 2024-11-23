@@ -12,12 +12,8 @@ export const itemStyle = css`
   flex-direction: column;
   align-items: center;
   border: none;
-  border-radius: 8px;
 `;
 
-export const iconStyle = css`
-  width: 18rem;
-`;
 
 export const titleStyle = css`
   ${theme.fonts.head1}
