@@ -22,4 +22,5 @@ export const option = (isSelected) => css`
 	cursor: pointer;
 	background-color: ${isSelected ? theme.colors.green : theme.colors.gray10};
 	color: #555;
+	transition: background-color 0.3s ease;
 `;

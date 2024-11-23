@@ -1,4 +1,4 @@
-import { IcCheckFlled, IcCheckUnselect } from '@/assets/svg/index.jsx';
+import { IcCheckFlled, IcCheckUnfilled } from '@/assets/svg';
 import * as S from '@/components/common/CheckBox/CheckBox.style';
 
 const CheckBox = ({ isChecked, onClick }) => {
@@ -7,7 +7,7 @@ const CheckBox = ({ isChecked, onClick }) => {
 			{isChecked ? (
 				<IcCheckFlled onClick={onClick} />
 			) : (
-				<IcCheckUnselect onClick={onClick} />
+				<IcCheckUnfilled onClick={onClick} />
 			)}
 		</div>
 	);

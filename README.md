@@ -2,11 +2,9 @@
 
 # 🥧 Fortune Pi 🥧
 
-
-
-
-**Fortune Pi**는 지친 현대인들을 위해 3일에 1 번, 4주간 AI로 분석한 개인 맞춤형 사주분석을 제공합니다. 
-오늘 내일 모래에 대한 총운, 금전운, 주의점, 생활 가이드, 행복 팁을 통해 작은 힐링의 순간을 선사합니다. 사주 분석에 **Anthropic AI API** 를 활용해 높은 신뢰도와 정확성을 보장하며, 전통 사주명리 서비스 대비 간편한 접근성을 제공합니다.
+**Fortune Pi**는 지친 현대인들을 위해 3일에 1 번, 4주간 AI로 분석한 개인 맞춤형 사주분석을 제공합니다. <br />
+오늘 내일 모래에 대한 총운, 금전운, 주의점, 생활 가이드, 행복 팁을 통해 작은 힐링의 순간을 선사합니다. <br />
+사주 분석에 **Anthropic AI API** 를 활용해 높은 신뢰도와 정확성을 보장하며, 전통 사주명리 서비스 대비 간편한 접근성을 제공합니다.
 
 <br />
 
@@ -53,16 +51,7 @@ AI 기반 개인화된 운세 분석 및 조언
 </details>
 
 <details>
-  <summary>유서연</summary>
-  
-  - Input 퍼블리싱
-  - 날짜 입력 퍼블리싱
-  - 유저 정보 입력 페이지 퍼블리싱
-  - 
-</details>
-
-<details>
-  <summary>남다연</summary>
+  <summary>남다은</summary>
   
   - selectbox 퍼블리싱
   - Button 퍼블리싱
@@ -71,10 +60,19 @@ AI 기반 개인화된 운세 분석 및 조언
 </details>
 
 <details>
+  <summary>유서연</summary>
+  
+  - Input 퍼블리싱
+  - 날짜 입력 창 퍼블리싱
+  - 유저 정보 입력 페이지 퍼블리싱
+  - 
+</details>
+
+<details>
   <summary>한수정</summary>
   
   - 성별 선택 버튼 퍼블리싱
-  - 글로벌 스타일 수정적용
+  - 글로벌 스타일 수정 적용
   - 전체 파일 헤더 컴포넌트 퍼블리싱
 
 </details>
@@ -87,10 +85,10 @@ AI 기반 개인화된 운세 분석 및 조언
 <br />
 
 ## 🍰 컨벤션
-- ✨ Feat: A new feature or enhancement
-- 🐛 Fix: A bug fix
-- 🎨 Style: Code style changes (formatting, missing semi colons, etc)
-- 📝 Docs: Documentation changes
+- ✨ feat: A new feature or enhancement
+- 🐛 fix: A bug fix
+- 🎨 style: Code style changes (formatting, missing semi colons, etc)
+- 📝 docs: Documentation changes
 - ⚙️ init : init Setting
 
 <br />
@@ -107,8 +105,8 @@ AI 기반 개인화된 운세 분석 및 조언
 | feat/#issue/daeun |다은님 작업 페이지입니다.|
 | hansoojeong  |수정님 작업 페이지입니다.|
 | feat/#issue/hansoojeong  |수정님 작업 페이지입니다.|
-| youtheyean |서연님 작업 페이지입니다.|
-| feat/#issue/youtheyean |서연님 작업 페이지입니다.|
+| youtheyeon |서연님 작업 페이지입니다.|
+| feat/#issue/youtheyeon |서연님 작업 페이지입니다.|
 | kimminjeong |민정님 작업 페이지입니다.|
 | feat/#issue/kimminjeong |민정님 작업 페이지입니다.|
 
