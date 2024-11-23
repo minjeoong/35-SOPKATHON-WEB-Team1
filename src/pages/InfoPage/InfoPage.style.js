@@ -13,8 +13,3 @@ export const container = css`
 	margin-top: 8.1rem;
 	padding: 0 2.7rem;
 `;
-
-export const btnContainer = css`
-	position: absolute;
-	bottom: 3rem;
-`;
