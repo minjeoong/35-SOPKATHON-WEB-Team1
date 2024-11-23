@@ -1,4 +1,4 @@
-import { Global } from '@emotion/react';
+import { Global, ThemeProvider } from '@emotion/react';
 import { RouterProvider } from 'react-router-dom';
 import router from './Router';
 import GlobalStyle from './styles/GlobalStyle';
