@@ -1,7 +1,6 @@
 import MainPage from '@/pages/MainPage/MainPage.jsx';
-import { createBrowserRouter } from 'react-router-dom';
-import MainPage from './pages/MainPage/MainPage.jsx';
 import InfoPage from './pages/InfoPage/InfoPage.jsx'
+import { createBrowserRouter } from 'react-router-dom';
 
 const router = createBrowserRouter([
 	{
