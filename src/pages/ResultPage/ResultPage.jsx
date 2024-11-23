@@ -2,9 +2,11 @@ import { IcHome } from '@/assets/svg/index.jsx';
 import Button from '@/components/common/Button/Button.jsx';
 import Header from '@/components/common/Header/Header';
 import EmojiList from '@/components/ResultPage/EmojiList/EmojiList.jsx';
+
 import FortuneCard from '@/components/ResultPage/FortuneCard/FortuneCard';
 import ResultFortune from '@/components/ResultPage/ResultFortune/ResultFortune';
 import { FortuneData } from '@/constants/fortuneData';
+import { useGetFortune } from '@/hooks/useGetFortune';
 import { useState } from 'react';
 import * as S from './ResultPage.style';
 
@@ -12,16 +14,20 @@ const ResultPage = () => {
 	const fortuneData = FortuneData;
 	const [isFeedback, setIsFeedback] = useState(false);
 
+	const { data } = useGetFortune(1);
+
 	const onSubmit = () => {
 		if (!isFeedback) {
 			setIsFeedback(true);
 		}
 	};
 
+	console.log(data);
+
 	return (
 		<>
 			<Header>이민규님의 운세 카드 대령이오 !</Header>
-			<FortuneCard />
+			<FortuneCard data={data} />
 
 			<section css={S.cardContainer}>
 				<ResultFortune data={fortuneData} />

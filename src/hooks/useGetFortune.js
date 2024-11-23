@@ -1,9 +1,9 @@
 import { getFortune } from '@/apis/getFortune';
 import { useQuery } from '@tanstack/react-query';
 
-export const useGetFortune = (id) => {
+export const useGetFortune = (fortuneId) => {
 	return useQuery({
-		queryKey: ['result', id],
-		queryFn: () => getFortune(id),
+		queryKey: ['result', fortuneId],
+		queryFn: () => getFortune(fortuneId),
 	});
 };

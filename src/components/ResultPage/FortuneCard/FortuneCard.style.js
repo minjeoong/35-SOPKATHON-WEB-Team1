@@ -1,7 +1,7 @@
 import { theme } from '@/styles/theme';
 import { css } from '@emotion/react';
 
-export const wrapper = css`
+export const wrapper = (mainCardImageUrl) => css`
 	display: flex;
 
 	flex-direction: column;
@@ -16,7 +16,12 @@ export const wrapper = css`
 	gap: 0.4rem;
 
 	padding: 21.2rem 1.7rem 2.2rem 1.7rem;
+	margin-top: 3.3rem;
 	margin-bottom: 5.5rem;
+
+	background-image: url(${mainCardImageUrl});
+	background-size: cover;
+	background-repeat: no-repeat;
 `;
 
 export const date = css`
@@ -39,4 +44,7 @@ export const cardContent = css`
 
 	white-space: normal;
 	word-wrap: break-word;
+	max-height: 10rem;
+
+	overflow-y: scroll;
 `;

@@ -1,9 +1,9 @@
-import axios from 'axios';
+import { axiosInstance } from '@/libs/axios';
 
-export const getFortune = async (id) => {
-	const response = await axios.get(`/`, {
-		id,
+export const getFortune = async (fortuneId) => {
+	const response = await axiosInstance.get(`/fortunes/${fortuneId}`, {
+		fortuneId: fortuneId,
 	});
 
-	return response;
+	return response.data;
 };
