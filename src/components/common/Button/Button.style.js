@@ -16,7 +16,7 @@ export const button = css`
 	transition: all 0.2s ease-in;
 `;
 
-export const variant = (variant) => {
+export const variant = (variant, isDisabled) => {
 	const style = {
 		primary: css`
 			display: flex;
@@ -26,7 +26,8 @@ export const variant = (variant) => {
 			gap: 1rem;
 			flex-shrink: 0;
 			border-radius: 40px;
-			background: ${theme.colors.green};
+			background: ${isDisabled ? theme.colors.gray30 : theme.colors.green};
+			color: ${isDisabled ? theme.colors.gray40 : theme.colors.black};
 		`,
 
 		secondary: css``,

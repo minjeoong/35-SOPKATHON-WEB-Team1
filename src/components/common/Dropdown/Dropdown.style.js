@@ -10,7 +10,7 @@ export const wrapper = (isDisabled) => css`
 
 	padding: 1rem 1.5rem;
 
-	border: ${isDisabled ? 'none' : `1px solid ${theme.colors.green}`};
+	border: ${isDisabled ? `none` : `1px solid ${theme.colors.green}`};
 	border-radius: 4rem;
 
 	color: ${theme.colors.gray40};
@@ -22,6 +22,7 @@ export const wrapper = (isDisabled) => css`
 
 	button {
 		background: transparent;
+		cursor: ${isDisabled || `pointer`};
 	}
 `;
 

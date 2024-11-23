@@ -6,7 +6,7 @@ export const InputName = React.memo(({ value, onChange }) => {
 	return (
 		<input
 			css={S.input}
-			placeholder='이름을 입력해주세요'
+			placeholder='이름 (예 : 이도형)'
 			value={value}
 			onChange={onChange}
 		/>
@@ -31,7 +31,7 @@ export const InputBirth = React.memo(({ value, onChange }) => {
 				<span>{isSolar ? '양력' : '음력'}</span>
 			</button>
 			<input
-				placeholder='생년월일을 입력해주세요'
+				placeholder='생년월일 (예 : 20001215) '
 				value={value}
 				onChange={onChange}
 			/>

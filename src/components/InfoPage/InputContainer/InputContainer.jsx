@@ -1,12 +1,12 @@
-import { useState, useCallback } from 'react';
+import { useState, useCallback, useEffect } from 'react';
 import * as S from './InputContainer.style';
 import { DATE } from '@/constants/date';
 import Dropdown from '@/components/common/Dropdown/Dropdown';
 import { InputBirth, InputName } from '@/components/common/Input/Input';
 import GenderSelect from '@/components/common/GenderSelect/GenderSelect';
-import CheckBox from '../common/CheckBox/CheckBox';
+import CheckBox from '@/components/common/CheckBox/CheckBox';
 
-const InputContainer = () => {
+const InputContainer = ({ onValidityChange }) => {
 	const [name, setName] = useState('');
 	const [birth, setBirth] = useState('');
 	const [gender, setGender] = useState('male');
@@ -32,10 +32,15 @@ const InputContainer = () => {
 		setIsDisabled((prev) => !prev);
 		if (isDisabled) {
 			setIsOpen(false);
-		} else {
-			setTime('');
 		}
 	};
+
+	useEffect(() => {
+		const isNameValid = name.trim().length > 0;
+		const isBirthValid = /^[0-9]{8}$/.test(birth); // YYYYMMDD
+		const isTimeValid = isDisabled || time !== '';
+		onValidityChange(isNameValid && isBirthValid && isTimeValid);
+	}, [name, birth, time, isDisabled, onValidityChange]);
 
 	return (
 		<ul css={S.Container}>
