@@ -42,12 +42,26 @@ const fonts = {
 		font-weight: 800;
 		line-height: 26px; /* 108.333% */
 	`,
+	title3: css`
+		font-family: 'Apple SD Gothic Neo';
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: 26px; /* 162.5% */
+	`,
 	body1: css`
 		font-family: 'Apple SD Gothic Neo';
 		font-size: 16px;
 		font-style: normal;
 		font-weight: 500;
 		line-height: 20px; /* 125% */
+	`,
+	body2: css`
+		font-family: 'Apple SD Gothic Neo';
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 20px; /* 142.857% */
 	`,
 	caption1: css`
 		font-family: 'Apple SD Gothic Neo';
