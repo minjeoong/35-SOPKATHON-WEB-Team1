@@ -54,6 +54,7 @@ export default [
 			'prettier/prettier': 'warn',
 
 			// 커스텀 규칙
+			'react/no-unknown-property': 'off',
 			'react/react-in-jsx-scope': 'off', // React 17+에서 불필요
 			'react/prop-types': 'off', // PropTypes 사용 안 함
 			'react/jsx-no-target-blank': 'off', // target="_blank" 경고 비활성화
