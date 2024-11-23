@@ -7,8 +7,10 @@ import {
 	IcHomeChar4,
 	IcHomeChar5,
 } from '@/assets/svg/index.jsx';
+import { useNavigate, useNavigation } from 'react-router-dom';
 
 const MainPage = () => {
+	const navigate = useNavigate();
 	return (
 		<main css={S.MainWrap}>
 			<h1 css={S.Title}>
@@ -24,7 +26,11 @@ const MainPage = () => {
 				<IcHomeChar5 css={S.Char5} />
 			</section>
 			<div css={S.ButtonWrap}>
-				<Button variant='primary' size='large'>
+				<Button
+					variant='primary'
+					size='large'
+					onClick={() => navigate('/info')}
+				>
 					시작하기
 				</Button>
 			</div>
