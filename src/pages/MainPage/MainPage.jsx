@@ -1,11 +1,5 @@
-import CheckBox from '@/components/common/CheckBox/CheckBox.jsx';
-
 const MainPage = () => {
-	return (
-		<div>
-			<CheckBox />
-		</div>
-	);
+	return <div>MainPage</div>;
 };
 
 export default MainPage;
