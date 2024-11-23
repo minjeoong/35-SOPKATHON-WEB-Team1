@@ -3,17 +3,24 @@ import * as S from './ResultPage.style';
 import Header from '@/components/common/Header/Header';
 import { FortuneData } from '@/constants/fortuneData';
 import EmojiList from '@/components/ResultPage/EmojiList/EmojiList.jsx';
-import { emogiContainer } from './ResultPage.style';
 import Button from '@/components/common/Button/Button.jsx';
 import { IcHome } from '@/assets/svg/index.jsx';
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const ResultPage = () => {
 	const fortuneData = FortuneData;
 	const [isFeedback, setIsFeedback] = useState(false);
+	const [isEmojiSelected, setIsEmojiSelected] = useState(false);
+	const navigate = useNavigate();
+
+	// 이모지 선택 시 상태 업데이트
+	const handleEmojiClick = () => {
+		setIsEmojiSelected(true);
+	};
 
 	const onSubmit = () => {
-		if (!isFeedback) {
+		if (isEmojiSelected) {
 			setIsFeedback(true);
 		}
 	};
@@ -26,7 +33,7 @@ const ResultPage = () => {
 				<ResultFortune data={fortuneData} />
 			</section>
 			<section css={S.emogiContainer}>
-				<EmojiList />
+				<EmojiList onEmojiClick={handleEmojiClick} />
 				<Button
 					variant={isFeedback ? 'thankyou' : 'feedback'}
 					size='small'
