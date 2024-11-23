@@ -15,6 +15,7 @@ export const iconStyle = css`
 	width: 2rem;
 	height: 2rem;
 	left: 1rem;
+	cursor: pointer;
 `;
 
 export const titleStyle = css`
