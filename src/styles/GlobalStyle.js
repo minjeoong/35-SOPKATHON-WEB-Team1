@@ -129,6 +129,7 @@ const GlobalStyle = css`
 		max-width: 37.5rem;
 		min-height: 100dvh;
 		margin: 0 auto;
+		background-color: #eff1f2;
 	}
 
 	::-webkit-scrollbar {
