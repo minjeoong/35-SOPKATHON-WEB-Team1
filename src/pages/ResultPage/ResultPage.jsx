@@ -30,7 +30,7 @@ const ResultPage = () => {
 			<FortuneCard data={data} />
 
 			<section css={S.cardContainer}>
-				<ResultFortune data={fortuneData} />
+				<ResultFortune data={data} />
 			</section>
 			<section css={S.emogiContainer}>
 				<EmojiList />
