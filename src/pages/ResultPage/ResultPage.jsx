@@ -14,7 +14,7 @@ const ResultPage = () => {
 	const fortuneData = FortuneData;
 	const [isFeedback, setIsFeedback] = useState(false);
 
-	const { data } = useGetFortune(1);
+	const { data } = useGetFortune(2);
 
 	const onSubmit = () => {
 		if (!isFeedback) {
@@ -26,7 +26,7 @@ const ResultPage = () => {
 
 	return (
 		<>
-			<Header>이민규님의 운세 카드 대령이오 !</Header>
+			<Header>{data?.data.name}님의 운세 카드 대령이오 !</Header>
 			<FortuneCard data={data} />
 
 			<section css={S.cardContainer}>
