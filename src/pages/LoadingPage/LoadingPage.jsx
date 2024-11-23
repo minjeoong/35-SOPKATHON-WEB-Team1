@@ -7,11 +7,11 @@ import './slick-theme.css';
 
 const LoadingPage = () => {
 	const settings = {
-		slidesToShow: 2.5,
+		slidesToShow: 3,
 		slidesToScroll: 1,
 		autoplay: true,
 		autoplaySpeed: 1000,
-		infinite: CARDS.length > 1,
+		infinite: true,
 		centerMode: true,
 	};
 
