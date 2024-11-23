@@ -4,14 +4,15 @@ import { css } from '@emotion/react';
 
 export const wrapper = css`
 	background-image: url(${bg_img});
-	background-size: contain;
+	background-size: cover;
 	background-repeat: no-repeat;
 
 	width: 37.5rem;
-	height: 66.7rem;
-	position: absolute;
+	height: 100vh;
+	position: fixed;
 	top: 0;
-	left: 0;
+	left: 50%;
+	transform: translateX(-50%);
 `;
 
 export const slider = css`
