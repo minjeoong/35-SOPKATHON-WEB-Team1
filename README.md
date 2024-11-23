@@ -43,6 +43,42 @@ AI 기반 개인화된 운세 분석 및 조언
 |김민정|남다은|유서연|한수정|
 |[@minjeoong](https://github.com/minjeoong)|[@namdaeun](https://github.com/namdaeun)| [@youtheyeon](https://github.com/youtheyeon)|[@hansoojeongsj](https://github.com/hansoojeongsj)| 
 
+<details>
+  <summary>김민정</summary>
+  
+  - Home 퍼블리싱
+  - 체크박스 퍼블리싱
+  - 과제 작성 및 제출
+  - 팀원 에러 확인 및 해결방안 제안, 관리
+</details>
+
+<details>
+  <summary>유서연</summary>
+  
+  - Input 퍼블리싱
+  - 날짜 입력 퍼블리싱
+  - 유저 정보 입력 페이지 퍼블리싱
+  - 
+</details>
+
+<details>
+  <summary>남다연</summary>
+  
+  - selectbox 퍼블리싱
+  - Button 퍼블리싱
+  - 캐러샐 퍼블리싱
+
+</details>
+
+<details>
+  <summary>한수정</summary>
+  
+  - 성별 선택 버튼 퍼블리싱
+  - 글로벌 스타일 수정적용
+  - 전체 파일 헤더 컴포넌트 퍼블리싱
+
+</details>
+
 <br />
 
 ## 🛠️ TECH STACK
@@ -92,5 +128,5 @@ AI 기반 개인화된 운세 분석 및 조언
 ## 🌊 웨비 팀원들의 사진(before)
 
 ![KakaoTalk_Photo_2024-11-23-21-30-09](https://github.com/user-attachments/assets/c3582656-b5c2-45d3-b221-92d3b1d75138)
-![IMG_1777](https://github.com/user-attachments/assets/99947301-2411-4e19-8dd4-720c2efed82c)
+![KakaoTalk_Photo_2024-11-24-00-54-53](https://github.com/user-attachments/assets/da4b8b43-416a-4b1b-abbc-86bbc0de8a56)
 

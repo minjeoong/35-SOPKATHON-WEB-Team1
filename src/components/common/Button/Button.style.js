@@ -1,4 +1,5 @@
 import { css } from '@emotion/react';
+import { theme } from '@/styles/theme.js';
 
 export const button = css`
 	display: flex;
@@ -17,7 +18,16 @@ export const button = css`
 
 export const variant = (variant) => {
 	const style = {
-		primary: css``,
+		primary: css`
+			display: flex;
+			padding: 0.9rem 14.2rem;
+			justify-content: center;
+			align-items: center;
+			gap: 1rem;
+			flex-shrink: 0;
+			border-radius: 40px;
+			background: ${theme.colors.green};
+		`,
 
 		secondary: css``,
 	};
@@ -27,7 +37,11 @@ export const variant = (variant) => {
 
 export const size = (size) => {
 	const style = {
-		large: css``,
+		large: css`
+			width: 32.1rem;
+			height: 5rem;
+			${theme.fonts.title2}
+		`,
 		medium: css``,
 		small: css``,
 	};

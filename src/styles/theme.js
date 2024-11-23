@@ -32,7 +32,7 @@ const fonts = {
 		font-family: 'Apple SD Gothic Neo';
 		font-size: 2rem;
 		font-style: normal;
-		font-weight: 800;
+		font-weight: 700;
 		line-height: 2.4rem; /* 120% */
 	`,
 	title1: css`
@@ -89,7 +89,7 @@ const fonts = {
 		font-size: 1.2rem;
 		font-style: normal;
 		font-weight: 500;
-		line-height: 2rem; /* 166.667% */
+		line-height: 2rem;
 	`,
 };
 

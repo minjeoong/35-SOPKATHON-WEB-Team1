@@ -1,23 +1,24 @@
+import * as React from 'react';
 const SvgIcCheckFlled = (props) => (
 	<svg
-		xmlns='http://www.w3.org/2000/svg'
-		fill='none'
 		viewBox='0 0 20 20'
+		fill='none'
+		xmlns='http://www.w3.org/2000/svg'
 		{...props}
 	>
-		<rect width={20} height={20} fill='#18DC10' rx={4} />
-		<g clipPath='url(#ic_check_flled_svg__a)'>
+		<rect width={20} height={20} rx={4} fill='#18DC10' />
+		<g clipPath='url(#clip0_82_2267)'>
 			<path
-				stroke='#fff'
+				d='M4.55554 10.8571L7.66665 14.2857L15.4444 5.71429'
+				stroke='white'
+				strokeWidth={2}
 				strokeLinecap='round'
 				strokeLinejoin='round'
-				strokeWidth={2}
-				d='m4.556 10.857 3.11 3.429 7.778-8.572'
 			/>
 		</g>
 		<defs>
-			<clipPath id='ic_check_flled_svg__a'>
-				<path fill='#fff' d='M3 4h14v12H3z' />
+			<clipPath id='clip0_82_2267'>
+				<rect width={14} height={12} fill='white' transform='translate(3 4)' />
 			</clipPath>
 		</defs>
 	</svg>
