@@ -2,16 +2,18 @@ import React, { useState } from 'react';
 import { MoonAndStars, Sun } from '@/assets/svg';
 import * as S from './Input.style';
 
-export const InputName = () => {
+export const InputName = React.memo(({ value, onChange }) => {
 	return (
-		<>
-			<label css={S.label}>이름</label>
-			<input css={S.input} placeholder='이름을 입력해주세요' />
-		</>
+		<input
+			css={S.input}
+			placeholder='이름 (예 : 이도형)'
+			value={value}
+			onChange={onChange}
+		/>
 	);
-};
+});
 
-export const InputBirth = () => {
+export const InputBirth = React.memo(({ value, onChange }) => {
 	const [isSolar, setIsSolar] = useState(true);
 
 	const toggleDateType = () => {
@@ -19,19 +21,20 @@ export const InputBirth = () => {
 	};
 
 	return (
-		<>
-			<label css={S.label}>생년월일</label>
-			<div css={isSolar ? S.inputPlus : S.inputMinus}>
-				<button onClick={toggleDateType}>
-					{isSolar ? (
-						<Sun width={20} height={20} />
-					) : (
-						<MoonAndStars width={20} height={20} />
-					)}
-					<span>{isSolar ? '양력' : '음력'}</span>
-				</button>
-				<input placeholder='생년월일을 입력해주세요' />
-			</div>
-		</>
+		<div css={isSolar ? S.inputPlus : S.inputMinus}>
+			<button onClick={toggleDateType}>
+				{isSolar ? (
+					<Sun width={20} height={20} />
+				) : (
+					<MoonAndStars width={20} height={20} />
+				)}
+				<span>{isSolar ? '양력' : '음력'}</span>
+			</button>
+			<input
+				placeholder='생년월일 (예 : 20001215) '
+				value={value}
+				onChange={onChange}
+			/>
+		</div>
 	);
-};
+});
