@@ -1,6 +1,5 @@
-import React from 'react';
+import MainPage from '@/pages/MainPage/MainPage';
 import { createBrowserRouter } from 'react-router-dom';
-import MainPage from './pages/MainPage/MainPage';
 
 const router = createBrowserRouter([
 	{
