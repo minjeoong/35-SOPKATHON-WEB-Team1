@@ -35,19 +35,9 @@ const MainPage = () => {
 				>
 					시작하기
 				</Button>
-				{/*<Button variant='feedback' size='small'>*/}
-				{/*	평가 제출하기*/}
-				{/*</Button>*/}
+
 				{/*<Button variant='thankyou' size='small'>*/}
 				{/*	평가 제출하기*/}
-				{/*</Button>*/}
-				{/*<Button*/}
-				{/*	variant='togoHome'*/}
-				{/*	size='large'*/}
-				{/*	onClick={() => navigate('/info')}*/}
-				{/*>*/}
-				{/*	<IcHome />*/}
-				{/*	처음으로 돌아가기*/}
 				{/*</Button>*/}
 			</div>
 		</main>
