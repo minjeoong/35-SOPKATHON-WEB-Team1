@@ -8,6 +8,7 @@ const sharedInputStyles = css`
 	height: 4rem;
 	border-radius: 40px;
 	transition: background 0.3s ease;
+	color: ${theme.colors.gray50};
 
 	&::placeholder {
 		color: ${theme.colors.gray30};
@@ -40,8 +41,12 @@ const sharedBtnInputStyles = css`
 	border-top-right-radius: 40px;
 	border-bottom-right-radius: 40px;
 	background: ${theme.colors.gray20};
-	color: ${theme.colors.gray40};
+	color: ${theme.colors.gray50};
 	transition: background 0.3s ease;
+
+	&::placeholder {
+		color: ${theme.colors.gray30};
+	}
 
 	&:not(:placeholder-shown) {
 		border: 1.5px solid ${theme.colors.green};
