@@ -1,5 +1,5 @@
-import { css } from '@emotion/react';
 import { theme } from '@/styles/theme.js';
+import { css } from '@emotion/react';
 
 export const button = css`
 	display: flex;
@@ -14,6 +14,8 @@ export const button = css`
 	cursor: pointer;
 
 	transition: all 0.2s ease-in;
+
+	text-decoration: none;
 `;
 
 export const variant = (variant, isDisabled) => {
