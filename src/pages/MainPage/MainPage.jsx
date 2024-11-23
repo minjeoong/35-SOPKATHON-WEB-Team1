@@ -6,6 +6,7 @@ import { useState } from 'react';
 const MainPage = () => {
 	const [isOpen, setIsOpen] = useState(false);
 	const [selectedValue, setSelectedValue] = useState('');
+	const [isDisabled, setIsDisabled] = useState(true);
 
 	const handleTrigger = () => {
 		setIsOpen(!isOpen);
@@ -25,6 +26,7 @@ const MainPage = () => {
 				selectedValue={selectedValue}
 				onSelect={handleSelect}
 				placeholder='시간'
+				isDisabled={isDisabled}
 			/>
 		</div>
 	);

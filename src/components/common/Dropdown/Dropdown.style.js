@@ -1,23 +1,24 @@
 import { theme } from '@/styles/theme';
 import { css } from '@emotion/react';
 
-export const wrapper = css`
+export const wrapper = (isDisabled) => css`
 	display: flex;
 
 	width: 100%;
+	/* height: 4rem; */
 
 	justify-content: space-between;
 	align-items: center;
 
-	gap: 4rem;
-
 	padding: 1rem 1.5rem;
 
-	border: 1.5px solid ${theme.colors.green};
+	border: ${isDisabled ? 'none' : `1px solid ${theme.colors.green}`};
 	border-radius: 4rem;
 
 	color: ${theme.colors.gray40};
-	background-color: ${theme.colors.gray10};
+	background-color: ${isDisabled
+		? `${theme.colors.gray20}`
+		: `${theme.colors.gray10}`};
 
 	${theme.fonts.body2}
 `;
@@ -50,4 +51,8 @@ export const item = css`
 	border-bottom: 1px solid ${theme.colors.gray20};
 
 	${theme.fonts.body2}
+`;
+
+export const svg = css`
+	background: ${theme.colors.gray20};
 `;
