@@ -7,11 +7,14 @@ import {
 	IcSmilingFace,
 } from '@/assets/svg';
 
-const EmojiList = () => {
+const EmojiList = ({ onEmojiClick, disabled }) => {
 	const [selectedEmoji, setSelectedEmoji] = useState(null);
 
 	const handleEmojiClick = (emojiId) => {
-		setSelectedEmoji(emojiId);
+		if (!disabled) {
+			setSelectedEmoji(emojiId);
+			onEmojiClick();
+		}
 	};
 
 	const emojis = [

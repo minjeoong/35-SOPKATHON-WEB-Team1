@@ -8,7 +8,7 @@ export const container = css`
 	border-radius: 20px;
 	overflow: hidden;
 	background-color: ${theme.colors.gray10};
-	border: 1.5px solid ${theme.colors.green};
+	border: 1px solid ${theme.colors.green};
 `;
 
 export const option = (isSelected) => css`
