@@ -1,10 +1,23 @@
 > 🥠 AND SOPT 35th SOPKATHON (OUT OF POV) "서비스이름"
 
 # 🥧 Fortune Pi 🥧
+![fortune_1](https://github.com/user-attachments/assets/b5ca862a-edf6-429c-9916-01c000d2d3b4)
+![fortune_2](https://github.com/user-attachments/assets/caa79f1e-9728-43f4-ac6b-d86875978980)
 
 **Fortune Pi**는 지친 현대인들을 위해 3일에 1 번, 4주간 AI로 분석한 개인 맞춤형 사주분석을 제공합니다. <br />
 오늘 내일 모래에 대한 총운, 금전운, 주의점, 생활 가이드, 행복 팁을 통해 작은 힐링의 순간을 선사합니다. <br />
 사주 분석에 **Anthropic AI API** 를 활용해 높은 신뢰도와 정확성을 보장하며, 전통 사주명리 서비스 대비 간편한 접근성을 제공합니다.
+
+<br />
+
+## 우리 서비스의 UX/UI 
+
+![fortune_3](https://github.com/user-attachments/assets/a3f8a2d0-e64c-4cd0-a07f-b08a31745e5d)
+
+![fortune_4](https://github.com/user-attachments/assets/9c966578-17c1-4572-8922-a6fe8e1b9a2d)
+
+![forturn_5](https://github.com/user-attachments/assets/bbc06de9-4d45-4f36-943e-eeaddb50629d)
+
 
 <br />
 
@@ -127,4 +140,9 @@ AI 기반 개인화된 운세 분석 및 조언
 
 ![KakaoTalk_Photo_2024-11-23-21-30-09](https://github.com/user-attachments/assets/c3582656-b5c2-45d3-b221-92d3b1d75138)
 ![KakaoTalk_Photo_2024-11-24-00-54-53](https://github.com/user-attachments/assets/da4b8b43-416a-4b1b-abbc-86bbc0de8a56)
+
+## 🌊 웨비 팀원들의 사진(after)
+![KakaoTalk_Photo_2024-11-24-07-51-29](https://github.com/user-attachments/assets/dba04e82-ab6c-43ed-99ec-faf1b086802d)
+![KakaoTalk_Photo_2024-11-24-07-52-51](https://github.com/user-attachments/assets/ecf95263-844b-4d98-8af1-393b350a88d7)
+
 
