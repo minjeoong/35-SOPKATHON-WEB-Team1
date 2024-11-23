@@ -1,3 +1,7 @@
+export { default as IcExpressionlessFace } from './IcExpressionlessFace';
+export { default as IcGrinningFace } from './IcGrinningFace';
+export { default as IcSadFace } from './IcSadFace';
+export { default as IcSmilingFace } from './IcSmilingFace';
 export { default as IcArrowDown } from './IcArrowDown';
 export { default as IcArrowUp } from './IcArrowUp';
 export { default as IcBtnArrowLeft } from './IcBtnArrowLeft';
