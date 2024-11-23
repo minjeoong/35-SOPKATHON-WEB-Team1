@@ -29,3 +29,8 @@ export const NullDate = css`
 		${theme.fonts.body3}
 	}
 `;
+
+export const btnContainer = css`
+	position: absolute;
+	bottom: 3rem;
+`;
