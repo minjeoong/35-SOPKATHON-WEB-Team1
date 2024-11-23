@@ -23,38 +23,59 @@ const colors = {
 const fonts = {
 	head1: css`
 		font-family: 'Apple SD Gothic Neo';
-		font-size: 22px;
+		font-size: 2.2rem;
 		font-style: normal;
 		font-weight: 800;
-		line-height: 24px; /* 109.091% */
+		line-height: 2.4rem; /* 109.091% */
 	`,
 	head2: css`
 		font-family: 'Apple SD Gothic Neo';
-		font-size: 20px;
+		font-size: 2rem;
 		font-style: normal;
 		font-weight: 800;
-		line-height: 24px; /* 120% */
+		line-height: 2.4rem; /* 120% */
 	`,
 	title1: css`
 		font-family: 'Apple SD Gothic Neo';
-		font-size: 24px;
+		font-size: 2.4rem;
 		font-style: normal;
 		font-weight: 800;
-		line-height: 26px; /* 108.333% */
+		line-height: 2.6rem; /* 108.333% */
+	`,
+	title2: css`
+		font-family: 'Apple SD Gothic Neo';
+		font-size: 2rem;
+		font-style: normal;
+		font-weight: 800;
+		line-height: 2.6rem;
+	`,
+	title3: css`
+		font-family: 'Apple SD Gothic Neo';
+		font-size: 1.6rem;
+		font-style: normal;
+		font-weight: 600;
+		line-height: 2.4rem;
 	`,
 	body1: css`
 		font-family: 'Apple SD Gothic Neo';
-		font-size: 16px;
+		font-size: 1.6rem;
 		font-style: normal;
 		font-weight: 500;
-		line-height: 20px; /* 125% */
+		line-height: 2rem; /* 125% */
 	`,
+	body2: css`
+		font-family: 'Apple SD Gothic Neo';
+		font-size: 1.4rem;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 2rem; /* 125% */
+`,
 	caption1: css`
 		font-family: 'Apple SD Gothic Neo';
-		font-size: 12px;
+		font-size: 1.2rem;
 		font-style: normal;
 		font-weight: 500;
-		line-height: 20px; /* 166.667% */
+		line-height: 2rem; /* 166.667% */
 	`,
 };
 
