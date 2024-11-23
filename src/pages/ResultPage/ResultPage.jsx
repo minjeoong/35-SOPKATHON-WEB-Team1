@@ -1,12 +1,12 @@
-import ResultFortune from '@/components/ResultPage/ResultFortune/ResultFortune';
-import * as S from './ResultPage.style';
-import Header from '@/components/common/Header/Header';
-import { FortuneData } from '@/constants/fortuneData';
-import EmojiList from '@/components/ResultPage/EmojiList/EmojiList.jsx';
-import { emogiContainer } from './ResultPage.style';
-import Button from '@/components/common/Button/Button.jsx';
 import { IcHome } from '@/assets/svg/index.jsx';
+import Button from '@/components/common/Button/Button.jsx';
+import Header from '@/components/common/Header/Header';
+import EmojiList from '@/components/ResultPage/EmojiList/EmojiList.jsx';
+import FortuneCard from '@/components/ResultPage/FortuneCard/FortuneCard';
+import ResultFortune from '@/components/ResultPage/ResultFortune/ResultFortune';
+import { FortuneData } from '@/constants/fortuneData';
 import { useState } from 'react';
+import * as S from './ResultPage.style';
 
 const ResultPage = () => {
 	const fortuneData = FortuneData;
@@ -21,6 +21,7 @@ const ResultPage = () => {
 	return (
 		<>
 			<Header>이민규님의 운세 카드 대령이오 !</Header>
+			<FortuneCard />
 
 			<section css={S.cardContainer}>
 				<ResultFortune data={fortuneData} />
