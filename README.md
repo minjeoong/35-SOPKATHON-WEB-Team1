@@ -53,21 +53,21 @@ AI 기반 개인화된 운세 분석 및 조언
 </details>
 
 <details>
-  <summary>유서연</summary>
-  
-  - Input 퍼블리싱
-  - 날짜 입력 창 퍼블리싱
-  - 유저 정보 입력 페이지 퍼블리싱
-  - 
-</details>
-
-<details>
   <summary>남다은</summary>
   
   - selectbox 퍼블리싱
   - Button 퍼블리싱
   - 캐러샐 퍼블리싱
 
+</details>
+
+<details>
+  <summary>유서연</summary>
+  
+  - Input 퍼블리싱
+  - 날짜 입력 창 퍼블리싱
+  - 유저 정보 입력 페이지 퍼블리싱
+  - 
 </details>
 
 <details>
@@ -87,10 +87,10 @@ AI 기반 개인화된 운세 분석 및 조언
 <br />
 
 ## 🍰 컨벤션
-- ✨ Feat: A new feature or enhancement
-- 🐛 Fix: A bug fix
-- 🎨 Style: Code style changes (formatting, missing semi colons, etc)
-- 📝 Docs: Documentation changes
+- ✨ feat: A new feature or enhancement
+- 🐛 fix: A bug fix
+- 🎨 style: Code style changes (formatting, missing semi colons, etc)
+- 📝 docs: Documentation changes
 - ⚙️ init : init Setting
 
 <br />
