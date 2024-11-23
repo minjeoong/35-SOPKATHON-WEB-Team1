@@ -54,7 +54,7 @@ const fonts = {
 		font-size: 1.6rem;
 		font-style: normal;
 		font-weight: 600;
-		line-height: 2.4rem;
+		line-height: 2.6rem;
 	`,
 	body1: css`
 		font-family: 'Apple SD Gothic Neo';
