@@ -8,7 +8,7 @@
 		"build": "vite build",
 		"lint": "eslint .",
 		"preview": "vite preview",
-		"svgr": "npx @svgr/cli -d src/assets/svg --ignore-existing --no-dimensions public/svg"
+		"svgr": "npx @svgr/cli --icon --no-svgo --no-dimensions --ext jsx -d src/assets/svg public/svg"
 	},
 	"dependencies": {
 		"@emotion/react": "^11.13.5",
