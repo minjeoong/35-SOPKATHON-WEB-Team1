@@ -3,6 +3,8 @@ import { css } from '@emotion/react';
 
 export const List = css`
 	display: flex;
+	justify-content: center;
+
 	gap: 1.6rem;
 `;
 
