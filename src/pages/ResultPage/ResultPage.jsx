@@ -1,4 +1,4 @@
-import ResultFortune from '@/components/common/ResultFortune/ResultFortune';
+import ResultFortune from '@/components/ResultPage/ResultFortune/ResultFortune';
 import * as S from './ResultPage.style';
 import Header from '@/components/common/Header/Header';
 import { FortuneData } from '@/constants/fortuneData';
