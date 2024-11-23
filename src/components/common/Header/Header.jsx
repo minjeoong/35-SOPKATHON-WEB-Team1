@@ -1,5 +1,3 @@
-// Header.jsx
-import { css } from '@emotion/react';
 import { IcBtnArrowLeft } from '@/assets/svg';
 import * as S from './Header.style';
 

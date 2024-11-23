@@ -1,17 +1,21 @@
+import * as React from 'react';
 const SvgIcArrowUp = (props) => (
 	<svg
-		xmlns='http://www.w3.org/2000/svg'
-		fill='none'
 		viewBox='0 0 16 16'
+		fill='none'
+		xmlns='http://www.w3.org/2000/svg'
 		{...props}
 	>
-		<path
-			stroke='#626971'
-			strokeLinecap='round'
-			strokeLinejoin='round'
-			strokeWidth={2}
-			d='M2.667 10.667 8 5.333l5.333 5.334'
-		/>
+		<g id='btn_arrow_left_20'>
+			<path
+				id='Vector'
+				d='M2.66665 10.6667L7.99998 5.33334L13.3333 10.6667'
+				stroke='#626971'
+				strokeWidth={2}
+				strokeLinecap='round'
+				strokeLinejoin='round'
+			/>
+		</g>
 	</svg>
 );
 export default SvgIcArrowUp;
