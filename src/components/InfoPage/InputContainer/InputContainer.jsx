@@ -7,6 +7,8 @@ import GenderSelect from '@/components/common/GenderSelect/GenderSelect';
 import CheckBox from '@/components/common/CheckBox/CheckBox';
 import { usePostFortunes } from '@/apis/postFortunes.js';
 import Button from '@/components/common/Button/Button.jsx';
+import LoadingPage from '@/pages/LoadingPage/LoadingPage.jsx';
+import { useNavigate } from 'react-router-dom';
 
 const InputContainer = () => {
 	const [name, setName] = useState('');
@@ -16,6 +18,7 @@ const InputContainer = () => {
 	const [isDisabled, setIsDisabled] = useState(false); // 체크박스
 	const [isOpen, setIsOpen] = useState(false);
 	const [isFormValid, setIsFormValid] = useState(false); // 유효성 검사
+	const navigate = useNavigate();
 
 	const today = new Date();
 	const tomorrow = new Date(today);
@@ -83,9 +86,16 @@ const InputContainer = () => {
 				tomorrow: tomorrowFormatted,
 				afterTomorrow: afterTomorrowFormatted,
 			};
-			console.log(api_params);
 
-			mutate(api_params);
+			mutate(api_params, {
+				onSuccess: (data) => {
+					console.log(data.data);
+					navigate(`/result?fortuneId=${data.data.fortuneId}`);
+				},
+				onError: (error) => {
+					console.log(error);
+				},
+			});
 		}
 	};
 
@@ -95,6 +105,8 @@ const InputContainer = () => {
 		const isTimeValid = isDisabled || time !== '';
 		setIsFormValid(isNameValid && isBirthValid && isTimeValid);
 	}, [name, birth, time, isDisabled]);
+
+	if (isPending) return <LoadingPage></LoadingPage>;
 
 	return (
 		<div>

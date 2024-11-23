@@ -9,6 +9,9 @@ export const wrapper = css`
 
 	width: 37.5rem;
 	height: 66.7rem;
+	position: absolute;
+	top: 0;
+	left: 0;
 `;
 
 export const slider = css`
