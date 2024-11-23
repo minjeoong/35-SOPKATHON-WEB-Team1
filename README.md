@@ -1,13 +1,35 @@
 > 🥠 AND SOPT 35th SOPKATHON (OUT OF POV) "서비스이름"
 
-## 🎂 서비스 이름 및 간단한 소개
+# 🥧 Fortune Pi 🥧
 
 
 
-## 🥧 주요 기능
 
-<h3> 1️⃣ (기능 1) </h3>
-<h3> 2️⃣ (기능 2) </h3>
+**Fortune Pi**는 지친 현대인들을 위해 3일에 1 번, 4주간 AI로 분석한 개인 맞춤형 사주분석을 제공합니다. 
+오늘 내일 모래에 대한 총운, 금전운, 주의점, 생활 가이드, 행복 팁을 통해 작은 힐링의 순간을 선사합니다. 사주 분석에 **Anthropic AI API** 를 활용해 높은 신뢰도와 정확성을 보장하며, 전통 사주명리 서비스 대비 간편한 접근성을 제공합니다.
+
+<br />
+
+## 🎂 주요 기능
+
+<h3>  기능 1️⃣ </h3>
+
+3일마다 사용자의 방문을 유도하는 맞춤형 **사주 리딩** 서비스
+
+<h3>  기능 2️⃣ </h3>
+AI 기반 개인화된 운세 분석 및 조언
+
+<h3>  기능 3️⃣ </h3>
+3일이라는 특성을 살린 아래 카테고리에 대한 사주 리딩
+
+- 금전운
+- 조심해야할 것
+- 알아두면 좋은 것
+- 생활 가이드
+- 행복운
+
+
+<br />
 
 
 ## 👥 팀원 및 역할 분담
@@ -21,10 +43,12 @@
 |김민정|남다은|유서연|한수정|
 |[@minjeoong](https://github.com/minjeoong)|[@namdaeun](https://github.com/namdaeun)| [@youtheyeon](https://github.com/youtheyeon)|[@hansoojeongsj](https://github.com/hansoojeongsj)| 
 
+<br />
 
 ## 🛠️ TECH STACK
 [![My Skills](https://skillicons.dev/icons?i=js,html,css,react,emotion,react-query)](https://skillicons.dev)
 
+<br />
 
 ## 🍰 컨벤션
 - ✨ Feat: A new feature or enhancement
@@ -33,6 +57,7 @@
 - 📝 Docs: Documentation changes
 - ⚙️ init : init Setting
 
+<br />
 
 ## 브랜치 전략
 "본인이름" 으로 브랜치를 만들어서 진행하는 것이 디폴트이고,
@@ -62,7 +87,10 @@
 - [x]  1시간마다 진행상황 공유 (스크럼)
 - [x]  틈틈이 다른팀 기선제압하기 (?) 
 
+<br />
 
 ## 🌊 웨비 팀원들의 사진(before)
+
 ![KakaoTalk_Photo_2024-11-23-21-30-09](https://github.com/user-attachments/assets/c3582656-b5c2-45d3-b221-92d3b1d75138)
+![KakaoTalk_Photo_2024-11-24-00-54-53](https://github.com/user-attachments/assets/da4b8b43-416a-4b1b-abbc-86bbc0de8a56)
 
