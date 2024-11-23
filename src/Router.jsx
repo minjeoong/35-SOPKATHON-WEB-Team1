@@ -1,11 +1,15 @@
-import React from 'react';
+import MainPage from '@/pages/MainPage/MainPage.jsx';
+import InfoPage from './pages/InfoPage/InfoPage.jsx'
 import { createBrowserRouter } from 'react-router-dom';
-import MainPage from './pages/MainPage/MainPage.jsx';
 
 const router = createBrowserRouter([
 	{
-		path: '/',
-		element: <MainPage />,
+			path: '/',
+			element: <MainPage />,
+	},
+	{
+			path: '/info',
+			element: <InfoPage />,
 	},
 ]);
 
