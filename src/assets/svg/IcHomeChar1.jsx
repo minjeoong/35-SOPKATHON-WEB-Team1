@@ -1,48 +1,21 @@
 import * as React from 'react';
 const SvgIcHomeChar1 = (props) => (
 	<svg
-		viewBox='0 0 142 148'
+		viewBox='0 0 223 218'
 		fill='none'
 		xmlns='http://www.w3.org/2000/svg'
 		{...props}
 	>
-		<g id='Group 15'>
-			<path
-				id='Vector'
-				fillRule='evenodd'
-				clipRule='evenodd'
-				d='M59.8506 0C102.954 0 151.234 18.7948 151.234 61.8986C151.234 110.931 108.883 147.996 59.8506 147.996C18.9015 147.996 0 102.848 0 61.8986C0 28.2737 26.2257 0 59.8506 0Z'
-				fill='#18DC10'
-			/>
-			<circle
-				id='Ellipse 4'
-				cx={48.4247}
-				cy={59.2158}
-				r={19.5588}
-				fill='white'
-			/>
-			<circle
-				id='Ellipse 5'
-				cx={101.436}
-				cy={78.7746}
-				r={23.2007}
-				fill='white'
-			/>
-			<circle
-				id='Ellipse 6'
-				cx={48.4242}
-				cy={59.2159}
-				r={11.4655}
-				fill='#161616'
-			/>
-			<circle
-				id='Ellipse 7'
-				cx={101.436}
-				cy={78.7746}
-				r={13.4888}
-				fill='#161616'
-			/>
-		</g>
+		<path
+			fillRule='evenodd'
+			clipRule='evenodd'
+			d='M88.101 0C151.55 0 222.62 27.6663 222.62 91.1158C222.62 163.292 160.277 217.853 88.101 217.853C27.8233 217.853 0 151.394 0 91.1158C0 41.6194 38.6047 0 88.101 0Z'
+			fill='#18DC10'
+		/>
+		<circle cx={71.282} cy={87.1668} r={28.7908} fill='white' />
+		<circle cx={149.315} cy={115.958} r={34.1519} fill='white' />
+		<circle cx={71.2822} cy={87.1667} r={16.8774} fill='#161616' />
+		<circle cx={149.315} cy={115.958} r={19.8557} fill='#161616' />
 	</svg>
 );
 export default SvgIcHomeChar1;

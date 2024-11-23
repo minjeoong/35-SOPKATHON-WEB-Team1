@@ -1,5 +1,6 @@
 import MainPage from '@/pages/MainPage/MainPage.jsx';
-import InfoPage from './pages/InfoPage/InfoPage.jsx'
+import InfoPage from './pages/InfoPage/InfoPage.jsx';
+import ResultPage from './pages/ResultPage/ResultPage.jsx';
 import { createBrowserRouter } from 'react-router-dom';
 
 const router = createBrowserRouter([
@@ -11,6 +12,10 @@ const router = createBrowserRouter([
 			path: '/info',
 			element: <InfoPage />,
 	},
+	{
+		path: '/result',
+		element: <ResultPage />,
+},
 ]);
 
 export default router;
