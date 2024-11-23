@@ -1,12 +1,10 @@
+export { default as IcArrowDown } from './IcArrowDown';
+export { default as IcArrowUp } from './IcArrowUp';
+export { default as IcCheckFlled } from './IcCheckFlled';
 export { default as IcExpressionlessFace } from './IcExpressionlessFace';
 export { default as IcGrinningFace } from './IcGrinningFace';
 export { default as IcSadFace } from './IcSadFace';
 export { default as IcSmilingFace } from './IcSmilingFace';
-export { default as IcArrowDown } from './IcArrowDown';
-export { default as IcArrowUp } from './IcArrowUp';
-export { default as IcCheckFlled } from './IcCheckFlled';
-
-export { default as IcCheckUnselect } from './IcCheckUnselect';
 
 export { default as IcLandingCardE1 } from './IcLandingCardE1';
 export { default as IcLandingCardF1 } from './IcLandingCardF1';
@@ -30,6 +28,6 @@ export { default as IcHomeChar5 } from './IcHomeChar5';
 export { default as IcLast } from './IcLast';
 export { default as IcSiren } from './IcSiren';
 
+export { default as IcHome } from './IcHome';
 export { default as MoonAndStars } from './MoonAndStars';
 export { default as Sun } from './Sun';
-export { default as IcHome } from './IcHome';
