@@ -1,6 +1,7 @@
 import * as S from './MainPage.style';
 import Button from '@/components/common/Button/Button.jsx';
 import {
+	IcHome,
 	IcHomeChar1,
 	IcHomeChar2,
 	IcHomeChar3,
@@ -27,19 +28,27 @@ const MainPage = () => {
 				<IcHomeChar5 css={S.Char5} />
 			</section>
 			<div css={S.ButtonWrap}>
-				{/*<Button*/}
-				{/*	variant='primary'*/}
-				{/*	size='large'*/}
-				{/*	onClick={() => navigate('/info')}*/}
-				{/*>*/}
-				{/*	시작하기*/}
-				{/*</Button>*/}
+				<Button
+					variant='primary'
+					size='large'
+					onClick={() => navigate('/info')}
+				>
+					시작하기
+				</Button>
 				{/*<Button variant='feedback' size='small'>*/}
 				{/*	평가 제출하기*/}
 				{/*</Button>*/}
-				<Button variant='thankyou' size='small'>
-					평가 제출하기
-				</Button>
+				{/*<Button variant='thankyou' size='small'>*/}
+				{/*	평가 제출하기*/}
+				{/*</Button>*/}
+				{/*<Button*/}
+				{/*	variant='togoHome'*/}
+				{/*	size='large'*/}
+				{/*	onClick={() => navigate('/info')}*/}
+				{/*>*/}
+				{/*	<IcHome />*/}
+				{/*	처음으로 돌아가기*/}
+				{/*</Button>*/}
 			</div>
 		</main>
 	);
