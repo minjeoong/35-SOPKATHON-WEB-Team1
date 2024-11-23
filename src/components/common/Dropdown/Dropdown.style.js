@@ -1,11 +1,15 @@
 import { theme } from '@/styles/theme';
 import { css } from '@emotion/react';
 
+export const label = css`
+	color: ${theme.colors.gray40};
+
+	${theme.fonts.title3};
+`;
+
 export const wrapper = (isDisabled) => css`
 	display: flex;
-
-	width: 100%;
-	/* height: 4rem; */
+	position: relative;
 
 	justify-content: space-between;
 	align-items: center;
@@ -26,7 +30,7 @@ export const wrapper = (isDisabled) => css`
 export const itemList = css`
 	position: absolute;
 
-	top: 4.5rem;
+	top: 4.8rem;
 
 	width: 32rem;
 	max-height: 15.2rem;
