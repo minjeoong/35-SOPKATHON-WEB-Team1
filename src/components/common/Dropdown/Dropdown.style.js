@@ -19,7 +19,7 @@ export const wrapper = (isDisabled) => css`
 		: `${theme.colors.gray10}`};
 
 	${theme.fonts.body2}
-
+	transition: border-color 0.3s ease, background-color 0.3s ease;
 	button {
 		background: transparent;
 		cursor: ${isDisabled || `pointer`};
@@ -30,6 +30,7 @@ export const itemList = css`
 	position: absolute;
 
 	top: 4.8rem;
+	left: 0;
 
 	width: 32rem;
 	max-height: 15.2rem;
