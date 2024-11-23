@@ -10,19 +10,24 @@ import FortuneCard from '@/components/ResultPage/FortuneCard/FortuneCard';
 import { useGetFortune } from '@/hooks/useGetFortune';
 import { useState } from 'react';
 
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 const ResultPage = () => {
 	const [isFeedback, setIsFeedback] = useState(false);
 	const [isEmojiSelected, setIsEmojiSelected] = useState(false);
 	const navigate = useNavigate();
 
+	const location = useLocation();
+	const queryParams = new URLSearchParams(location.search);
+	const fortuneId = queryParams.get('fortuneId');
+	console.log(fortuneId);
+
 	// 이모지 선택 시 상태 업데이트
 	const handleEmojiClick = () => {
 		setIsEmojiSelected(true);
 	};
 
-	const { data } = useGetFortune(2);
+	const { data } = useGetFortune(fortuneId);
 
 	const onSubmit = () => {
 		if (isEmojiSelected) {

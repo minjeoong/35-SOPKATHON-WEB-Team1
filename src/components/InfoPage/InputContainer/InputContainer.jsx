@@ -1,14 +1,14 @@
-import { useState, useCallback, useEffect } from 'react';
-import * as S from './InputContainer.style';
-import { DATE } from '@/constants/date';
-import Dropdown from '@/components/common/Dropdown/Dropdown';
-import { InputBirth, InputName } from '@/components/common/Input/Input';
-import GenderSelect from '@/components/common/GenderSelect/GenderSelect';
-import CheckBox from '@/components/common/CheckBox/CheckBox';
 import { usePostFortunes } from '@/apis/postFortunes.js';
 import Button from '@/components/common/Button/Button.jsx';
+import CheckBox from '@/components/common/CheckBox/CheckBox';
+import Dropdown from '@/components/common/Dropdown/Dropdown';
+import GenderSelect from '@/components/common/GenderSelect/GenderSelect';
+import { InputBirth, InputName } from '@/components/common/Input/Input';
+import { DATE } from '@/constants/date';
 import LoadingPage from '@/pages/LoadingPage/LoadingPage.jsx';
+import { useCallback, useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import * as S from './InputContainer.style';
 
 const InputContainer = () => {
 	const [name, setName] = useState('');
@@ -108,7 +108,7 @@ const InputContainer = () => {
 		setIsFormValid(isNameValid && isBirthValid && isTimeValid);
 	}, [name, birth, time, isDisabled]);
 
-	if (isPending) return <LoadingPage></LoadingPage>;
+	if (isPending) return <LoadingPage name={name}></LoadingPage>;
 
 	return (
 		<div>

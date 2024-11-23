@@ -5,7 +5,7 @@ import Slider from 'react-slick';
 import './slick-theme.css';
 import './slick.css';
 
-const LoadingPage = () => {
+const LoadingPage = ({ name }) => {
 	const settings = {
 		slidesToShow: 3,
 		slidesToScroll: 1,
@@ -18,7 +18,7 @@ const LoadingPage = () => {
 
 	return (
 		<div css={S.wrapper}>
-			<Header>이민규님의 3일간 운세는?</Header>
+			<Header>{name}님의 3일간 운세는?</Header>
 			<div css={S.noticeLayout}>
 				<p css={S.description}>
 					너만을 위한 사주 결과를 정성스럽게 준비 중이야.
