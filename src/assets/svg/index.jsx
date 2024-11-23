@@ -2,7 +2,7 @@ export { default as IcArrowDown } from './IcArrowDown';
 export { default as IcArrowUp } from './IcArrowUp';
 export { default as IcBtnArrowLeft } from './IcBtnArrowLeft';
 export { default as IcCheckFlled } from './IcCheckFlled';
-export { default as IcCheckUnselect } from './IcCheckUnselect';
+export { default as IcCheckUnfilled } from './IcCheckUnfilled';
 export { default as IcFireCash } from './IcFireCash';
 export { default as IcGood } from './IcGood';
 export { default as IcHomeChar1 } from './IcHomeChar1';
