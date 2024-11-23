@@ -18,3 +18,4 @@ export { default as IcLast } from './IcLast';
 export { default as IcSiren } from './IcSiren';
 export { default as MoonAndStars } from './MoonAndStars';
 export { default as Sun } from './Sun';
+export { default as IcHome } from './IcHome';

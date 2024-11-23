@@ -30,7 +30,46 @@ export const variant = (variant, isDisabled) => {
 			color: ${isDisabled ? theme.colors.gray40 : theme.colors.black};
 		`,
 
-		secondary: css``,
+		feedback: css`
+			display: flex;
+
+			padding: 0.7rem 3.5rem;
+			justify-content: center;
+			align-items: center;
+			gap: 1rem;
+			flex-shrink: 0;
+
+			border-radius: 22px;
+			border: 2px solid ${theme.colors.gray20};
+			background: ${theme.colors.gray10};
+			color: ${theme.colors.gray50};
+		`,
+		thankyou: css`
+			display: flex;
+			padding: 0.7rem 3.5rem;
+			justify-content: center;
+			align-items: center;
+			gap: 1rem;
+			border-radius: 22px;
+			border: 2px solid ${theme.colors.gray20};
+			background: ${theme.colors.gray20};
+			color: ${theme.colors.gray30};
+		`,
+		togoHome: css`
+			display: flex;
+			width: 321px;
+			height: 50px;
+			padding: 12px 74px 12px 75px;
+			justify-content: center;
+			align-items: center;
+			flex-shrink: 0;
+
+			border-radius: 40px;
+			border: 2px solid ${theme.colors.green};
+			background: ${theme.colors.gray10};
+
+			gap: 0.4rem;
+		`,
 	};
 
 	return style[variant];
@@ -44,7 +83,11 @@ export const size = (size) => {
 			${theme.fonts.title2}
 		`,
 		medium: css``,
-		small: css``,
+		small: css`
+			width: 14.7rem;
+			height: 3.4rem;
+			${theme.fonts.body2}
+		`,
 	};
 
 	return style[size];
