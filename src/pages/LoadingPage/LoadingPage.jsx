@@ -13,6 +13,7 @@ const LoadingPage = () => {
 		autoplaySpeed: 2000,
 		infinite: true,
 		centerMode: true,
+		useTransform: false,
 	};
 
 	return (
