@@ -2,15 +2,15 @@ import Header from '@/components/common/Header/Header';
 import { CARDS } from '@/constants/card';
 import * as S from '@/pages/LoadingPage/Loading.style';
 import Slider from 'react-slick';
-import './/slick.css';
 import './slick-theme.css';
+import './slick.css';
 
 const LoadingPage = () => {
 	const settings = {
 		slidesToShow: 3,
 		slidesToScroll: 1,
 		autoplay: true,
-		autoplaySpeed: 1000,
+		autoplaySpeed: 2000,
 		infinite: true,
 		centerMode: true,
 	};

@@ -12,8 +12,14 @@ export const wrapper = css`
 `;
 
 export const slider = css`
+	.slick-track {
+		display: flex;
+
+		gap: 1rem;
+	}
+
 	.slick-slide {
-		width: 189px !important;
+		width: 19rem !important;
 	}
 `;
 
