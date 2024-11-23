@@ -45,6 +45,8 @@ const InputContainer = () => {
 		setIsDisabled((prev) => !prev);
 		if (isDisabled) {
 			setIsOpen(false);
+		} else {
+			setTime('');
 		}
 	};
 

@@ -15,13 +15,13 @@ const Dropdown = ({
 		<div css={S.wrapper(isDisabled)} onClick={onTrigger}>
 			{selectedValue || placeholder}
 			<button onClick={onTrigger}>
-				{isOpen ? (
+				{!isDisabled && isOpen ? (
 					<IcArrowUp width={16} height={16} />
 				) : (
 					<IcArrowDown width={16} height={16} />
 				)}
 			</button>
-			{isOpen && (
+			{!isDisabled && isOpen && (
 				<ul css={S.itemList}>
 					{options.map((option, index) => (
 						<li
