@@ -29,7 +29,8 @@ const Dropdown = ({
 							value={option}
 							css={S.item}
 							tabIndex={0}
-							onClick={() => {
+							onClick={(e) => {
+								e.stopPropagation();
 								onSelect?.(option);
 								setIsOpen(false);
 							}}
