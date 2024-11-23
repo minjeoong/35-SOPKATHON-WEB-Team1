@@ -17,10 +17,17 @@ export const emogiContainer = css`
 `;
 
 export const bottomButton = css`
+	position: fixed;
 	display: flex;
+
+	bottom: 0rem;
+	left: 50%;
+	transform: translate(-50%, 0);
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	gap: 0.8rem;
-	padding-bottom: 5rem;
+	padding: 2rem 0;
+
+	background-color: ${theme.colors.gray10};
 `;
