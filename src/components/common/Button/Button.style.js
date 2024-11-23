@@ -29,7 +29,20 @@ export const variant = (variant) => {
 			background: ${theme.colors.green};
 		`,
 
-		secondary: css``,
+		feedback: css`
+			display: flex;
+
+			padding: 0.7rem 3.5rem;
+			justify-content: center;
+			align-items: center;
+			gap: 1rem;
+			flex-shrink: 0;
+
+			border-radius: 22px;
+			border: 2px solid ${theme.colors.gray20};
+			background: ${theme.colors.gray10};
+			color: ${theme.colors.gray50};
+		`,
 	};
 
 	return style[variant];
@@ -43,7 +56,11 @@ export const size = (size) => {
 			${theme.fonts.title2}
 		`,
 		medium: css``,
-		small: css``,
+		small: css`
+			width: 14.7rem;
+			height: 3.4rem;
+			${theme.fonts.body2}
+		`,
 	};
 
 	return style[size];

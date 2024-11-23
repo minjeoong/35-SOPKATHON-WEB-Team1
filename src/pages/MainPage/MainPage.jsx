@@ -11,6 +11,7 @@ import { useNavigate, useNavigation } from 'react-router-dom';
 
 const MainPage = () => {
 	const navigate = useNavigate();
+
 	return (
 		<main css={S.MainWrap}>
 			<h1 css={S.Title}>
@@ -33,6 +34,9 @@ const MainPage = () => {
 				>
 					시작하기
 				</Button>
+				{/*<Button variant='feedback' size='small'>*/}
+				{/*	평가 제출하기*/}
+				{/*</Button>*/}
 			</div>
 		</main>
 	);
