@@ -1,47 +1,40 @@
-import {
-	IcLandingCardE1,
-	IcLandingCardF1,
-	IcLandingCardG1,
-	IcLandingCardT1,
-	IcLandingCardW1,
-} from '@/assets/svg/index';
+import Header from '@/components/common/Header/Header';
+import { CARDS } from '@/constants/card';
 import * as S from '@/pages/LoadingPage/Loading.style';
 import Slider from 'react-slick';
-import 'slick-carousel/slick/slick-theme.css';
-import 'slick-carousel/slick/slick.css';
+import './/slick.css';
+import './slick-theme.css';
 
 const LoadingPage = () => {
-	const sliderSettings = {
+	const settings = {
+		slidesToShow: 2.5,
+		slidesToScroll: 1,
 		autoplay: true,
 		autoplaySpeed: 1000,
-		dots: false,
-		infinite: true,
-		slidesToShow: 3,
-		slidesToScroll: 1,
-		speed: 1000,
+		infinite: CARDS.length > 1,
 		centerMode: true,
 	};
 
 	return (
-		<div>
-			<Slider {...sliderSettings} css={S.slider}>
-				<div>
-					<IcLandingCardE1 width={188} height={255} />
-				</div>
-				<div>
-					<IcLandingCardF1 width={188} height={255} />
-				</div>
-				<div>
-					<IcLandingCardG1 width={188} height={255} />
-				</div>
-				<div>
-					<IcLandingCardT1 width={188} height={255} />
-				</div>
-				<div>
-					<IcLandingCardW1 width={188} height={255} />
-				</div>
+		<>
+			<Header>이민규님의 3일간 운세는?</Header>
+			<div>
+				<p css={S.description}>
+					너만을 위한 사주 결과를 정성스럽게 준비 중이야.
+				</p>
+				<p css={S.wait}>
+					1분 정도 걸릴 수 있으니까 <br />
+					조금만 기다려줘 ㅠ.ㅠ
+				</p>
+			</div>
+			<Slider {...settings} css={S.slider}>
+				{CARDS.map((Card, index) => (
+					<div key={index}>
+						<Card width={188} height={255} />
+					</div>
+				))}
 			</Slider>
-		</div>
+		</>
 	);
 };
 

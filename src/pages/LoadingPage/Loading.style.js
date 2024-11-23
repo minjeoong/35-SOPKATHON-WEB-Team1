@@ -1,8 +1,13 @@
 import { css } from '@emotion/react';
 
 export const slider = css`
-	.slick-track {
+	.slick-slide {
 		display: flex;
-		gap: 12rem;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.slick-track > div {
+		width: 188px !important;
 	}
 `;
