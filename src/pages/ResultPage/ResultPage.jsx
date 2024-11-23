@@ -32,7 +32,7 @@ const ResultPage = () => {
 	};
 
 	const shareData = {
-		title: `이민규님의 운세 카드 대령이오 !`, // 데이터 받아오면 이름 수정해주세요.
+		title: `${data?.data.name}님의 운세 카드 대령이오 !`,
 		url: window.location.href,
 	};
 
@@ -43,8 +43,6 @@ const ResultPage = () => {
 			console.log(err);
 		}
 	};
-
-	console.log(data);
 
 	return (
 		<>
