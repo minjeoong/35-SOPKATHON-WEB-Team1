@@ -4,10 +4,20 @@ const colors = {
 	black: '#161616',
 	white: '#ffffff',
 
+	// gray scale
+	gray50: '#43494F',
 	gray40: '#626971',
 	gray30: '#c1c7cf',
 	gray20: '#e0e3e5',
 	gray10: '#eff1f2',
+
+	// key color
+	lime10: '#b0ff1a',
+	green: '#18dc10',
+	blue: '#3b79fe',
+	orange: '#ff9122',
+	yellow: '#fde816',
+	red: '#fa4336',
 };
 
 const fonts = {
