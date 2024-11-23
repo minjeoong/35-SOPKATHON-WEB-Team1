@@ -10,7 +10,9 @@ export const wrapper = (isDisabled) => css`
 
 	padding: 1rem 1.5rem;
 
-	border: ${isDisabled ? `1px solid ${theme.colors.gray20}` : `1px solid ${theme.colors.green}`};
+	border: ${isDisabled
+		? `1px solid ${theme.colors.gray20}`
+		: `1px solid ${theme.colors.green}`};
 	border-radius: 4rem;
 
 	color: ${theme.colors.gray40};
@@ -24,6 +26,8 @@ export const wrapper = (isDisabled) => css`
 		background: transparent;
 		cursor: ${isDisabled || `pointer`};
 	}
+
+	cursor: pointer;
 `;
 
 export const itemList = css`

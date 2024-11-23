@@ -1,15 +1,18 @@
+import Button from '@/components/common/Button/Button.jsx';
+import Header from '@/components/common/Header/Header';
+import EmojiList from '@/components/ResultPage/EmojiList/EmojiList.jsx';
 import ResultFortune from '@/components/ResultPage/ResultFortune/ResultFortune';
 import * as S from './ResultPage.style';
-import Header from '@/components/common/Header/Header';
-import { FortuneData } from '@/constants/fortuneData';
-import EmojiList from '@/components/ResultPage/EmojiList/EmojiList.jsx';
-import Button from '@/components/common/Button/Button.jsx';
+
 import { IcHome } from '@/assets/svg/index.jsx';
+
+import FortuneCard from '@/components/ResultPage/FortuneCard/FortuneCard';
+import { useGetFortune } from '@/hooks/useGetFortune';
 import { useState } from 'react';
+
 import { useNavigate } from 'react-router-dom';
 
 const ResultPage = () => {
-	const fortuneData = FortuneData;
 	const [isFeedback, setIsFeedback] = useState(false);
 	const [isEmojiSelected, setIsEmojiSelected] = useState(false);
 	const navigate = useNavigate();
@@ -19,6 +22,8 @@ const ResultPage = () => {
 		setIsEmojiSelected(true);
 	};
 
+	const { data } = useGetFortune(2);
+
 	const onSubmit = () => {
 		if (isEmojiSelected) {
 			setIsFeedback(true);
@@ -27,7 +32,7 @@ const ResultPage = () => {
 	};
 
 	const shareData = {
-		title: `이민규님의 운세 카드 대령이오 !`, // 데이터 받아오면 이름 수정해주세요.
+		title: `${data?.data.name}님의 운세 카드 대령이오 !`,
 		url: window.location.href,
 	};
 
@@ -41,10 +46,11 @@ const ResultPage = () => {
 
 	return (
 		<>
-			<Header>이민규님의 운세 카드 대령이오 !</Header>
+			<Header>{data?.data.name}님의 운세 카드 대령이오 !</Header>
+			<FortuneCard data={data} />
 
 			<section css={S.cardContainer}>
-				<ResultFortune data={fortuneData} />
+				<ResultFortune data={data} />
 			</section>
 			<section css={S.emogiContainer}>
 				<EmojiList onEmojiClick={handleEmojiClick} disabled={isFeedback} />

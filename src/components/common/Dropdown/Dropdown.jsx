@@ -12,7 +12,7 @@ const Dropdown = ({
 	onSelect,
 }) => {
 	return (
-		<div css={S.wrapper(isDisabled)}>
+		<div css={S.wrapper(isDisabled)} onClick={onTrigger}>
 			{selectedValue || placeholder}
 			<button onClick={onTrigger}>
 				{isOpen ? (

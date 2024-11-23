@@ -21,6 +21,13 @@ const colors = {
 };
 
 const fonts = {
+	head0: css`
+		font-family: 'Apple SD Gothic Neo';
+		font-size: 40px;
+		font-style: normal;
+		font-weight: 800;
+		line-height: 40px; /* 60% */
+	`,
 	head1: css`
 		font-family: 'Apple SD Gothic Neo';
 		font-size: 2.2rem;
