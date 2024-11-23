@@ -44,16 +44,15 @@ export const variant = (variant, isDisabled) => {
 			background: ${theme.colors.gray10};
 			color: ${theme.colors.gray50};
 		`,
-		thankyou: css`
+		submit: css`
 			display: flex;
 			padding: 0.7rem 3.5rem;
 			justify-content: center;
 			align-items: center;
 			gap: 1rem;
 			border-radius: 22px;
-			border: 2px solid ${theme.colors.gray20};
-			background: ${theme.colors.gray20};
-			color: ${theme.colors.gray30};
+			background: ${theme.colors.green};
+			color: ${theme.colors.white};
 		`,
 		togoHome: css`
 			display: flex;

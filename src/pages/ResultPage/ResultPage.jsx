@@ -22,6 +22,20 @@ const ResultPage = () => {
 	const onSubmit = () => {
 		if (isEmojiSelected) {
 			setIsFeedback(true);
+			setIsEmojiSelected(false);
+		}
+	};
+
+	const shareData = {
+		title: `이민규님의 운세 카드 대령이오 !`, // 데이터 받아오면 이름 수정해주세요.
+		url: window.location.href,
+	};
+
+	const handleShare = async () => {
+		try {
+			await navigator.share(shareData);
+		} catch (err) {
+			console.log(err);
 		}
 	};
 
@@ -33,21 +47,18 @@ const ResultPage = () => {
 				<ResultFortune data={fortuneData} />
 			</section>
 			<section css={S.emogiContainer}>
-				<EmojiList onEmojiClick={handleEmojiClick} />
+				<EmojiList onEmojiClick={handleEmojiClick} disabled={isFeedback} />
 				<Button
-					variant={isFeedback ? 'thankyou' : 'feedback'}
+					variant={isEmojiSelected ? 'submit' : 'feedback'}
 					size='small'
 					onClick={onSubmit}
+					disabled={!isEmojiSelected}
 				>
 					{isFeedback ? '감사합니다' : '평가 제출하기'}
 				</Button>
 			</section>
 			<section css={S.bottomButton}>
-				<Button
-					variant='primary'
-					size='large'
-					onClick={() => console.log('결과 공유하기')}
-				>
+				<Button variant='primary' size='large' onClick={handleShare}>
 					결과 공유하기
 				</Button>
 				<Button variant='togoHome' size='large' onClick={() => navigate('/')}>
