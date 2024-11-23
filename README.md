@@ -56,13 +56,13 @@ AI 기반 개인화된 운세 분석 및 조언
   <summary>유서연</summary>
   
   - Input 퍼블리싱
-  - 날짜 입력 퍼블리싱
+  - 날짜 입력 창 퍼블리싱
   - 유저 정보 입력 페이지 퍼블리싱
   - 
 </details>
 
 <details>
-  <summary>남다연</summary>
+  <summary>남다은</summary>
   
   - selectbox 퍼블리싱
   - Button 퍼블리싱
@@ -74,7 +74,7 @@ AI 기반 개인화된 운세 분석 및 조언
   <summary>한수정</summary>
   
   - 성별 선택 버튼 퍼블리싱
-  - 글로벌 스타일 수정적용
+  - 글로벌 스타일 수정 적용
   - 전체 파일 헤더 컴포넌트 퍼블리싱
 
 </details>
