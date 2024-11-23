@@ -40,7 +40,7 @@ export const variant = (variant, isDisabled) => {
 			flex-shrink: 0;
 
 			border-radius: 22px;
-			border: 2px solid ${theme.colors.gray20};
+			border: 1.5px solid ${theme.colors.gray20};
 			background: ${theme.colors.gray10};
 			color: ${theme.colors.gray50};
 		`,
@@ -51,7 +51,7 @@ export const variant = (variant, isDisabled) => {
 			align-items: center;
 			gap: 1rem;
 			border-radius: 22px;
-			border: 2px solid ${theme.colors.gray20};
+			border: 1.5px solid ${theme.colors.gray20};
 			background: ${theme.colors.gray20};
 			color: ${theme.colors.gray30};
 		`,
@@ -65,7 +65,7 @@ export const variant = (variant, isDisabled) => {
 			flex-shrink: 0;
 
 			border-radius: 40px;
-			border: 2px solid ${theme.colors.green};
+			border: 1.5px solid ${theme.colors.green};
 			background: ${theme.colors.gray10};
 
 			gap: 0.4rem;

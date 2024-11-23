@@ -49,7 +49,7 @@ const sharedBtnInputStyles = css`
 	}
 
 	&:not(:placeholder-shown) {
-		border: 1.5px solid ${theme.colors.green};
+		border: 1px solid ${theme.colors.green};
 		border-left: none;
 		background: ${theme.colors.gray10};
 	}
@@ -72,15 +72,13 @@ export const inputPlus = css`
 
 	button {
 		${sharedBtnStyles}
+		border: 1px solid ${theme.colors.green};
 		background: ${theme.colors.green};
 		color: ${theme.colors.white};
 	}
 
 	input {
 		${sharedBtnInputStyles}
-		&:not(:placeholder-shown) {
-			border: 1.5px solid ${theme.colors.green};
-		}
 	}
 `;
 
@@ -89,14 +87,14 @@ export const inputMinus = css`
 
 	button {
 		${sharedBtnStyles}
-		border: 1.5px solid ${theme.colors.green};
+		border: 1px solid ${theme.colors.green};
 		background: ${theme.colors.gray10};
 		color: ${theme.colors.gray40};
 	}
 
 	input {
 		${sharedBtnInputStyles}
-		border: 1.5px solid ${theme.colors.green};
+		border: 1px solid ${theme.colors.green};
 		border-left: none;
 	}
 `;
