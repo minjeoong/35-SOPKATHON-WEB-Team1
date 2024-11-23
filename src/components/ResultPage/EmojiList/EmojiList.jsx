@@ -7,12 +7,14 @@ import {
 	IcSmilingFace,
 } from '@/assets/svg';
 
-const EmojiList = ({ onEmojiClick }) => {
+const EmojiList = ({ onEmojiClick, disabled }) => {
 	const [selectedEmoji, setSelectedEmoji] = useState(null);
 
 	const handleEmojiClick = (emojiId) => {
-		setSelectedEmoji(emojiId);
-		onEmojiClick();
+		if (!disabled) {
+			setSelectedEmoji(emojiId);
+			onEmojiClick();
+		}
 	};
 
 	const emojis = [
@@ -24,15 +26,15 @@ const EmojiList = ({ onEmojiClick }) => {
 
 	return (
 		<ul css={S.List}>
-				{emojis.map(({ id, Component }) => (
-					<li
-							key={id}
-							css={S.ListItem(selectedEmoji === id)}
-							onClick={() => handleEmojiClick(id)}
-					>
-							<Component width={32} height={32} />
-					</li>
-				))}
+			{emojis.map(({ id, Component }) => (
+				<li
+					key={id}
+					css={S.ListItem(selectedEmoji === id)}
+					onClick={() => handleEmojiClick(id)}
+				>
+					<Component width={32} height={32} />
+				</li>
+			))}
 		</ul>
 	);
 };
