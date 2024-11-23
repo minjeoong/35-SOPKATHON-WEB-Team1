@@ -92,5 +92,5 @@ AI 기반 개인화된 운세 분석 및 조언
 ## 🌊 웨비 팀원들의 사진(before)
 
 ![KakaoTalk_Photo_2024-11-23-21-30-09](https://github.com/user-attachments/assets/c3582656-b5c2-45d3-b221-92d3b1d75138)
-![IMG_1777](https://github.com/user-attachments/assets/99947301-2411-4e19-8dd4-720c2efed82c)
+![KakaoTalk_Photo_2024-11-24-00-54-53](https://github.com/user-attachments/assets/da4b8b43-416a-4b1b-abbc-86bbc0de8a56)
 
