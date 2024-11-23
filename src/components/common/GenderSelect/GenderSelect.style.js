@@ -24,7 +24,10 @@ export const option = (isSelected) => css`
   ${theme.fonts.body1}
   flex: 1;
   text-align: center;
-  line-height: 4rem;
+  padding: 1rem 6.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
   background-color: ${isSelected ? theme.colors.green : theme.colors.gray10};
   color: #555;
