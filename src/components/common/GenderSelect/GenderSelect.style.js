@@ -8,7 +8,7 @@ export const container = css`
 	border-radius: 20px;
 	overflow: hidden;
 	background-color: ${theme.colors.gray10};
-	border: 1.5px solid ${theme.colors.green};
+	border: 1px solid ${theme.colors.green};
 `;
 
 export const option = (isSelected) => css`
@@ -22,4 +22,5 @@ export const option = (isSelected) => css`
 	cursor: pointer;
 	background-color: ${isSelected ? theme.colors.green : theme.colors.gray10};
 	color: #555;
+	transition: background-color 0.3s ease;
 `;
